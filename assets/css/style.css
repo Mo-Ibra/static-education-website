@@ -2,14 +2,11 @@
   #main.css
 \*-----------------------------------*/
 
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
 :root {
-
   /**
    * colors
    */
@@ -37,7 +34,7 @@
   --title-lg: 2.2rem;
   --title-md: 2rem;
   --title-sm: 1.8rem;
-  
+
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
@@ -71,12 +68,7 @@
   --transition: 0.25s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -90,20 +82,26 @@
   box-sizing: border-box;
 }
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
 a,
 img,
 span,
 button,
-ion-icon { display: block; }
+ion-icon {
+  display: block;
+}
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-img { height: auto; }
+img {
+  height: auto;
+}
 
 button {
   background: none;
@@ -118,85 +116,212 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--white);
+  color: var(--roman-silver);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  overflow: hidden;
+}
 
+body.loaded {
+  overflow: visible;
+}
 
-
-
-
+body.nav-active {
+  overflow: hidden;
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
 
+.container {
+  padding-inline: 16px;
+}
 
+.headline-lg,
+.headline-md,
+.headline-sm,
+.title-lg {
+  color: var(--oxford-blue);
+  font-weight: var(--fw-700);
+}
 
+.headline-lg {
+  font-size: var(--headline-lg);
+  line-height: 1.3;
+}
 
+.headline-md {
+  font-size: var(--headline-md);
+  line-height: 1.2;
+}
 
+.headline-sm {
+  font-size: var(--headline-sm);
+}
+
+.title-lg {
+  font-size: var(--title-lg);
+  line-height: 1.4;
+}
+
+.title-md {
+  font-size: var(--title-md);
+}
+
+.title-sm {
+  font-size: var(--title-sm);
+  font-weight: var(--fw-500);
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
+
+.btn {
+  background-color: var(--light-coral);
+  color: var(--white);
+  max-width: max-content;
+  font-weight: var(--fw-500);
+  padding: 12px 24px;
+  border-radius: var(--radius-6);
+  transition: var(--transition);
+  outline: none;
+}
+
+.btn-secondary {
+  background-color: var(--oxford-blue);
+}
+
+.btn-tertiary {
+  background-color: var(--white);
+  color: var(--oxford-blue);
+  font-weight: var(--fw-600);
+}
+
+/* Error */
+:is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--bg);
+}
+
+:is(.headline-lg, .headline-md) .span {
+  color: var(--light-coral);
+  display: inline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  margin-block-end: 24px;
+}
+
+.section-subtitle {
+  font-weight: var(--fw-600);
+  color: var(--keppei);
+  margin-block-end: 4px;
+}
+
+.headline-md.has-after {
+  padding-block-end: 8px;
+}
+
+.headline-md.has-after::after {
+  background-image: url("../images/line-shape.svg");
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  z-index: -1;
+}
+
+.grid-list {
+  display: grid;
+  gap: 28px;
+}
+
+.card {
+  position: relative;
+  background-color: var(--white);
+  padding: 24px;
+  border-radius: var(--radius-6);
+  transition: var(--transition);
+}
+
+.card:is(:hover, :focus-within) {
+  box-shadow: var(--shadow-1);
+}
+
+.layer-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*-----------------------------------*\
   #PRELOADER
 \*-----------------------------------*/
 
-
-
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
 
-
-
-
-
-
 /*-----------------------------------*\
   #CATEGORY
 \*-----------------------------------*/
-
-
-
-
-
-
 
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
 
-
-
-
-
-
 /*-----------------------------------*\
   #COURSE
 \*-----------------------------------*/
-
-
-
 
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
 
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
-
-
-
-
-
