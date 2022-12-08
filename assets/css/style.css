@@ -429,9 +429,45 @@ body.nav-active {
   opacity: 0.6;
 }
 
+
+
+
+
+
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
+
+.hero-banner {
+  display: none;
+}
+
+.hero { padding-block-start: calc(var(--pt, 96px) + var(--section-padding)); }
+
+.hero .title-md {
+  font-weight: var(--fw-500);
+  padding-inline-start: 16px;
+  margin-block: 24px 44px;
+}
+
+.hero .title-md::before {
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--light-coral);
+}
+
+.hero .btn-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+
+
+
 
 /*-----------------------------------*\
   #CATEGORY
