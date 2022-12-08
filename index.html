@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- META -->
@@ -11,7 +12,7 @@
 
     <!-- TITLE -->
     <title>Education Website</title>
-    
+
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
@@ -25,21 +26,77 @@
     <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
     <link rel="preload" as="image" href="./assets/images/hero-bg.png" />
 </head>
+
 <body>
-    
+
 
     <!-- 
         # PRELOAD
     -->
 
-    <div class="preloader loaded">
-        <div class="circle"></div>
+    <div class="preloader" data-preloader>
+        <div class="circle" data-circle></div>
     </div>
 
 
     <!-- 
         # HEADER
     -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="145" height="27" alt="Youdemi home">
+            </a>
+
+            <!-- Navbar -->
+            <nav class="navbar" data-navbar>
+
+                <!-- Navbar Top -->
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" width="145" height="27" alt="Youdemi home">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <!-- Navbar List -->
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link title-sm" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <a href="#" class="btn btn-secondary">Start Free Trial</a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+        
+            <div class="overlay" data-overlay data-nav-toggler></div>
+
+        </div>
+    </header>
 
 
 
@@ -65,4 +122,5 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
