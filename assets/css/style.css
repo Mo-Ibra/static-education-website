@@ -473,6 +473,25 @@ body.nav-active {
   #CATEGORY
 \*-----------------------------------*/
 
+.category .grid-list { padding-block: 40px 52px; }
+
+.category-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border-inline-start: 4px solid transparent;
+}
+
+.category-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
+
+.category-card .title-sm { margin-block-start: 4px; }
+
+.category .btn { margin-inline: auto; }
+
+
+
+
+
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
