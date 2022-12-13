@@ -326,8 +326,13 @@ body.nav-active {
 }
 
 @keyframes rotate360 {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(1turn); }
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 
@@ -361,8 +366,13 @@ body.nav-active {
 }
 
 @keyframes headerActive {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .header .container {
@@ -372,7 +382,9 @@ body.nav-active {
 }
 
 .nav-open-btn,
-.nav-close-btn { font-size: 32px; }
+.nav-close-btn {
+  font-size: 32px;
+}
 
 .navbar {
   position: absolute;
@@ -401,16 +413,22 @@ body.nav-active {
   margin-block-end: 34px;
 }
 
-.nav-close-btn ion-icon { --ionicon-stroke-width: 35px; }
+.nav-close-btn ion-icon {
+  --ionicon-stroke-width: 35px;
+}
 
-.navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
+.navbar-item:not(:last-child) {
+  border-block-end: 1px solid var(--black_10);
+}
 
 .navbar-link {
   padding-block: 8px;
   transition: var(--transition);
 }
 
-.navbar-link:is(:hover, :focus-visible) { color: var(--oxford-blue); }
+.navbar-link:is(:hover, :focus-visible) {
+  color: var(--oxford-blue);
+}
 
 .overlay {
   position: fixed;
@@ -442,7 +460,9 @@ body.nav-active {
   display: none;
 }
 
-.hero { padding-block-start: calc(var(--pt, 96px) + var(--section-padding)); }
+.hero {
+  padding-block-start: calc(var(--pt, 96px) + var(--section-padding));
+}
 
 .hero .title-md {
   font-weight: var(--fw-500);
@@ -473,7 +493,9 @@ body.nav-active {
   #CATEGORY
 \*-----------------------------------*/
 
-.category .grid-list { padding-block: 40px 52px; }
+.category .grid-list {
+  padding-block: 40px 52px;
+}
 
 .category-card {
   display: flex;
@@ -482,11 +504,17 @@ body.nav-active {
   border-inline-start: 4px solid transparent;
 }
 
-.category-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
+.category-card:is(:hover, :focus-within) {
+  border-color: var(--light-coral);
+}
 
-.category-card .title-sm { margin-block-start: 4px; }
+.category-card .title-sm {
+  margin-block-start: 4px;
+}
 
-.category .btn { margin-inline: auto; }
+.category .btn {
+  margin-inline: auto;
+}
 
 
 
@@ -496,9 +524,61 @@ body.nav-active {
   #ABOUT
 \*-----------------------------------*/
 
+.about .container {
+  display: grid;
+  gap: 30px;
+}
+
+.about .section-text,
+.progress-list li:not(:last-child) {
+  margin-block-end: 32px;
+}
+
+.progress-label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 8px;
+}
+
+.progress-label-wrapper .title-sm {
+  color: var(--oxford-blue);
+  font-weight: var(-fw-600);
+}
+
+.progress {
+  background-color: var(--roman-silver_10);
+  height: 6px;
+  border-radius: var(--radius-6);
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.progress-fill.red {
+  background-color: var(--light-coral);
+  width: 86%;
+}
+
+.progress-fill.green {
+  background-color: var(--keppei);
+  width: 67%;
+}
+
+.progress-fill.yellow {
+  background-color: var(--selective-yellow);
+  width: 95%;
+}
+
+
+
 /*-----------------------------------*\
   #COURSE
 \*-----------------------------------*/
+
+
 
 /*-----------------------------------*\
   #CTA
